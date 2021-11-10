@@ -10,7 +10,7 @@ interface FooterProps {}
 const Footer: React.FunctionComponent<FooterProps> = () => {
   return (
     <footer className="bg-gray-500">
-      <section className="container mx-auto px-4 py-14 grid sm:grid-cols-2 gap-2 grid-cols-1 text-white">
+      <section className="container mx-auto px-4 py-14 text-white">
         <div>
           <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
             <Image alt="Creative Commons License" src={creativeCommons} />
