@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5.2/distr/fira_code.css);
+
+* {
+  font-family: "Fira Code", monospace;
+}
+
+body {
+  min-height: 100vh;
+  @apply bg-gray-200;
+}
+
+#app {
+  min-height: 100vh;
+}
