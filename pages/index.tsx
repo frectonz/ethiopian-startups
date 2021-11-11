@@ -1,9 +1,7 @@
-import Head from "next/head";
 import type { NextPage } from "next";
 
 import Hero from "../components/Hero";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import MetaHead from "../components/MetaHead";
 
 import addisAbeba from "../public/addis-abeba.jpg";
 
@@ -11,27 +9,17 @@ import { FaPoll, FaDoorOpen, FaPeopleCarry } from "react-icons/fa";
 
 const Home: NextPage = () => {
   return (
-    <div id="app">
-      <Head>
-        <title>Ethiopian StartUps</title>
-        <meta
-          name="description"
-          content="The big list of Ethiopian startups."
-        />
-        <link rel="icon" type="image/png" href="/ethiopic.png" />
-      </Head>
-
-      <Header />
-
+    <>
+      <MetaHead />
       <Hero
-        linkHref="/"
+        linkHref="/startups"
         linkText="Go to startups"
         headline="The big list of Ethiopian startups."
         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facilis
-          fuga porro deserunt repellat eaque expedita officiis, soluta vitae
-          eius quia, voluptate laboriosam ipsum quo? Itaque aut, animi facere
-          minus, fugiat vero saepe culpa repellat dolores, aliquid est
-          distinctio laudantium."
+        fuga porro deserunt repellat eaque expedita officiis, soluta vitae
+        eius quia, voluptate laboriosam ipsum quo? Itaque aut, animi facere
+        minus, fugiat vero saepe culpa repellat dolores, aliquid est
+        distinctio laudantium."
         imageSrc={addisAbeba}
       />
 
@@ -55,9 +43,7 @@ const Home: NextPage = () => {
           </h1>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </>
   );
 };
 

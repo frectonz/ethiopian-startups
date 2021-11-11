@@ -16,15 +16,17 @@ const NavLink: FunctionComponent<NavLinkProps> = ({ text, link }) => {
   );
 };
 
-interface NavBarProps {}
+interface NavBarProps {
+  links: { text: string; link: string }[];
+}
 
-const NavBar: FunctionComponent<NavBarProps> = () => {
+const NavBar: FunctionComponent<NavBarProps> = ({ links }) => {
   return (
     <nav className="py-1 sm:py-7">
       <ul className="flex justify-around flex-col sm:flex-row">
-        <NavLink text="StartUp" link="/" />
-        <NavLink text="People" link="/" />
-        <NavLink text="VCs and Investors" link="/" />
+        {links.map((link, i) => (
+          <NavLink key={i} text={link.text} link={link.link} />
+        ))}
       </ul>
     </nav>
   );
