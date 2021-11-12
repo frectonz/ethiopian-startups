@@ -16,3 +16,7 @@ body {
 #app {
   min-height: 100vh;
 }
+
+#headline {
+  background-image: url(/northern-mountains.jpg);
+}
