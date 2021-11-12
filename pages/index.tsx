@@ -15,11 +15,10 @@ const Home: NextPage = () => {
         linkHref="/startups"
         linkText="Go to startups"
         headline="The big list of Ethiopian startups."
-        body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facilis
-        fuga porro deserunt repellat eaque expedita officiis, soluta vitae
-        eius quia, voluptate laboriosam ipsum quo? Itaque aut, animi facere
-        minus, fugiat vero saepe culpa repellat dolores, aliquid est
-        distinctio laudantium."
+        body="This website tries to map the current state of the ethiopian startup
+         ecosystem. Its aim is to give validation and support to startups and help 
+         new comers to the ecosystem see what the current players in the ecosystem 
+         are taking part in."
         imageSrc={addisAbeba}
       />
 
