@@ -37,7 +37,6 @@ const Startups: NextPage<StartupsProps> = ({ startups }) => {
 export const getServerSideProps: GetServerSideProps<StartupsProps> =
   async () => {
     const startups = getStartups();
-    console.log(startups);
     return {
       props: {
         startups,

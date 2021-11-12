@@ -9,7 +9,7 @@ interface LogoProps {}
 const Logo: React.FunctionComponent<LogoProps> = () => {
   return (
     <div className="flex flex-col sm:flex-row">
-      <div className="w-20 mx-auto sm:mx-0 transform duration-500 hover:scale-125">
+      <div className="w-20 mx-auto sm:mx-0">
         <Link href="/">
           <a>
             <Image src={ethiopic} alt="Eth" />
