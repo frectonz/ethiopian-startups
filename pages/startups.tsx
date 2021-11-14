@@ -16,10 +16,7 @@ const Startups: NextPage<StartupsProps> = ({ startups }) => {
     <>
       <MetaHead title="Start ups" />
 
-      <section
-        id="headline"
-        className="bg-cover bg-center flex content-center justify-center py-40 filter grayscale"
-      >
+      <section id="headline">
         <h1 className="text-white text-3xl text-center filter drop-shadow-lg px-2">
           Ideas are easy. Implementation is hard.
         </h1>

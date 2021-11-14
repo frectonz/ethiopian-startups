@@ -19,4 +19,5 @@ body {
 
 #headline {
   background-image: url(/northern-mountains.jpg);
+  @apply bg-cover bg-center flex content-center justify-center py-40 filter grayscale;
 }
