@@ -34,8 +34,8 @@ const Hero: React.FunctionComponent<HeroProps> = ({
           </Link>
         </div>
       </div>
-      <div className="filter grayscale p-4">
-        <Image src={imageSrc} alt="Addis Abeba" />
+      <div className="p-4">
+        <Image src={imageSrc} alt="Addis Abeba" className="filter grayscale" />
       </div>
     </section>
   );
