@@ -17,9 +17,7 @@ interface StartupCardProps {
 }
 
 const StartupCard: React.FunctionComponent<StartupCardProps> = ({
-  startup,
-}) => {
-  const {
+  startup: {
     name,
     logo,
     website,
@@ -29,8 +27,8 @@ const StartupCard: React.FunctionComponent<StartupCardProps> = ({
     facebook,
     instagram,
     description,
-  } = startup;
-
+  },
+}) => {
   return (
     <div className="shadow-md p-4 flex flex-col justify-around">
       <div className="filter grayscale my-2">
