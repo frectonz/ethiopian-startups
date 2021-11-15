@@ -1,4 +1,3 @@
-import Image from "next/image";
 import * as React from "react";
 
 import {
@@ -10,14 +9,14 @@ import {
   FaGlobeAfrica,
 } from "react-icons/fa";
 
-import type { Startup } from "../interfaces/Startup";
+import type { Card } from "../interfaces/Card";
 
-interface StartupCardProps {
-  startup: Startup;
+interface CardProps {
+  card: Card;
 }
 
-const StartupCard: React.FunctionComponent<StartupCardProps> = ({
-  startup: {
+const CardDisplay: React.FunctionComponent<CardProps> = ({
+  card: {
     name,
     logo,
     website,
@@ -73,4 +72,4 @@ const StartupCard: React.FunctionComponent<StartupCardProps> = ({
   );
 };
 
-export default StartupCard;
+export default CardDisplay;

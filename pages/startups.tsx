@@ -1,14 +1,14 @@
 import type { GetServerSideProps, NextPage } from "next";
 
+import CardDisplay from "../components/CardDisplay";
 import MetaHead from "../components/MetaHead";
-import StartupCard from "../components/StartupCard";
 
 import { getStartups } from "../lib/startups";
 
-import type { Startup } from "../interfaces/Startup";
+import type { Card } from "../interfaces/Card";
 
 interface StartupsProps {
-  startups: Startup[];
+  startups: Card[];
 }
 
 const Startups: NextPage<StartupsProps> = ({ startups }) => {
@@ -24,7 +24,7 @@ const Startups: NextPage<StartupsProps> = ({ startups }) => {
 
       <section className="container mx-auto my-24 p-4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
         {startups.map((startup, i) => (
-          <StartupCard key={i} startup={startup} />
+          <CardDisplay key={i} card={startup} />
         ))}
       </section>
     </>

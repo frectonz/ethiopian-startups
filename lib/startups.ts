@@ -1,7 +1,7 @@
 import { join } from "path";
 import { getFiles } from "./getFiles";
 
-import type { Startup } from "../interfaces/Startup";
+import type { Card } from "../interfaces/Card";
 
 const STARTUPS_DIR = join(
   process.cwd(),
@@ -9,6 +9,6 @@ const STARTUPS_DIR = join(
   "../data/startups"
 );
 
-export function getStartups(): Startup[] {
-  return getFiles(STARTUPS_DIR) as Startup[];
+export function getStartups(): Card[] {
+  return getFiles(STARTUPS_DIR) as Card[];
 }

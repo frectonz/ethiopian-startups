@@ -1,4 +1,4 @@
-export interface Startup {
+export interface Card {
   name: string;
   logo: string;
   description: string;
