@@ -1,10 +1,9 @@
 import type { GetServerSideProps, NextPage } from "next";
 
-import CardDisplay from "../components/CardDisplay";
 import MetaHead from "../components/MetaHead";
+import CardDisplay from "../components/CardDisplay";
 
 import { getStartups } from "../lib/startups";
-
 import type { Card } from "../interfaces/Card";
 
 interface StartupsProps {
