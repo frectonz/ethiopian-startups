@@ -10,7 +10,7 @@ const MetaHead: React.FunctionComponent<MetaHeadProps> = ({ title = "" }) => {
     <Head>
       <title>Ethiopian StartUps {title ? ` - ${title}` : ""}</title>
       <meta name="description" content="The big list of Ethiopian startups." />
-      <link rel="icon" type="image/png" href="/ethiopic.png" />
+      <link rel="icon" type="image/ico" href="/favicon.ico" />
 
       <meta property="og:title" content="Ethiopian Startups" />
       <meta
