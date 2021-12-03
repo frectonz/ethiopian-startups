@@ -2,7 +2,6 @@
   "name": "Ethiopian Startups",
   "description": "The big list of ethiopian startups.",
   "short_name": "Startups",
-  "scope": "/",
   "start_url": "/",
   "theme_color": "#000000",
   "background_color": "#e5e7eb",
