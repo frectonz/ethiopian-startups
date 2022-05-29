@@ -34,14 +34,14 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/fraol0912"
+              href="https://github.com/frectonz"
             >
               <FaGithub className="text-3xl my-2" />
             </a>
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://twitter.com/FraolLemecha"
+              href="https://twitter.com/frectonz"
             >
               <FaTwitter className="text-3xl m-2" />
             </a>
